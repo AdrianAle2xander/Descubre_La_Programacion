@@ -1,0 +1,44 @@
+int x = 160;
+int y = 160;
+void main(){
+  animate(dibuja);
+}
+void dibuja(){
+  ja();
+  playel();
+}
+  
+void ja(){
+  background(135,76,76);
+  ellipse (x,y,20,20);
+}
+void playel(){
+  if (keyPressed && key=="right"){
+    x= x +1;        
+    if (x>320){ 
+     x= x -1;}
+   
+    
+      }
+if (keyPressed && key=="left"){
+    x= x -1;        
+    if (x<0){ 
+     x= x +1;}
+   
+    
+      }
+if (keyPressed && key=="up"){
+    y= y -1;        
+    if (y<0){ 
+     y= y +1;}
+   
+    
+      }
+if (keyPressed && key=="down"){
+    y= y +1;        
+    if (y>320){ 
+     y= y -1;}
+   
+    
+      }
+}
