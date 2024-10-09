@@ -1,0 +1,25 @@
+boolean a = false;
+int hola = 0;
+int co = 0;
+int lo = 0;
+int r = 0;
+
+void dibujal(){
+  hola++;
+  coclk();
+}
+void coclk(){
+  if (hola % 250 == 0) {
+    a = true;
+  }
+  if (a==true){
+    co = round(random(255));
+    lo = round(random(255));
+    r = round (random(255));
+    background (co,lo,r);
+    a = false;
+  }
+}
+void main(){
+  animate (dibujal,1);
+}
